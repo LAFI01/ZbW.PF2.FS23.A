@@ -1,21 +1,18 @@
-﻿
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-
-using klasseListe = Einheit11.Color;
-using a = System.Linq;
 
 namespace Einheit11.Color
 {
-    internal class Color
+    internal static class Color
     {
-        public string Name { get; set; }
+        public static string Name { get; set; }
 
-        public void LinqNameSpace()
+        public static void LinqNameSpace()
         {
             var a = new List<string>();
             var klasseListe = new List();
+            //Entferne oben "using System.Linq"
+            //und a kennt die Methode "Where" nicht mehr
             var c = a.Where(a => a != null);
         }
     }

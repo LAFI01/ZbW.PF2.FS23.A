@@ -1,4 +1,7 @@
-﻿namespace Einheit11
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Einheit11
 {
     partial class Adressverwaltung
     {

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Einheit11;
-
+﻿using MyColor = Einheit11.Color;
+using SystemColor = System.Drawing;
 namespace Einheit11
 {
     public class Person
@@ -13,18 +9,19 @@ namespace Einheit11
         private string _firstName;
         private int _age;
 
-        public Person() : this("default", "default" ,3)
+        public Person() : this("default", "default", 3)
         {
-          
+
         }
 
         public void SetHairColor(string color)
         {
-            //var c = new Color();
-            var color2 = System.Drawing.Color.AliceBlue;
+            var c = MyColor.Color.Name;
+            var color2 = SystemColor.Color.AliceBlue;
         }
 
-        public Person(string firstName, string name, int age) {
+        public Person(string firstName, string name, int age)
+        {
             FirstName = firstName;
             Name = name;
             Age = age;
@@ -36,7 +33,7 @@ namespace Einheit11
             get { return _name; }
             set
             {
-                 _name = value; 
+                _name = value;
             }
         }
 

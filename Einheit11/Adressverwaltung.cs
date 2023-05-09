@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Einheit11
 {
     public partial class Adressverwaltung : Form
