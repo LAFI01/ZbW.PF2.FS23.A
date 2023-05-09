@@ -5,7 +5,13 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  
+
+  <ItemGroup>
+    <Folder Include="Aufgabe-A12-1-4\Controller\" />
+    <Folder Include="Aufgabe-A12-1-4\Model\" />
+    <Folder Include="Aufgabe-A12-1-4\View\" />
+  </ItemGroup>
+
 </Project>
