@@ -8,10 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Aufgabe-A12-1-4\Controller\" />
-    <Folder Include="Aufgabe-A12-1-4\Model\" />
-    <Folder Include="Aufgabe-A12-1-4\View\" />
-  </ItemGroup>
-
 </Project>
