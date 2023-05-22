@@ -2,7 +2,8 @@
 {
     public class Person
     {
-        public Person(string vorname, string nachname, Adresse adresse)
+        public Person(string vorname, string nachname,
+            Adresse adresse)
         {
             Vorname = vorname;
             Nachname = nachname;

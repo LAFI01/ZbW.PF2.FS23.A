@@ -13,6 +13,7 @@
             var personA = new Person(TxtPersonA.Text);
             var personB = new Person(TxtPersonB.Text);
 
+         
             LblResponseEvenSign.Text = personA.CompareWithEvenSign(personB).ToString();
 
             var isEqual = personA.Equals(personB);
@@ -22,8 +23,8 @@
 
         private void ChangeBtnColor(object sender, bool isEqual)
         {
+       
             Button button = (Button)sender;
-
             if (isEqual)
             {
                 button.BackColor = Color.Green;
