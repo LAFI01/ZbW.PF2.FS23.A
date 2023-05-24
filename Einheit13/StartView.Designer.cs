@@ -49,7 +49,6 @@
             Controls.Add(BtnStaticExample);
             Name = "StartView";
             Text = "StartView";
-            Load += StartView_Load;
             ResumeLayout(false);
         }
 
