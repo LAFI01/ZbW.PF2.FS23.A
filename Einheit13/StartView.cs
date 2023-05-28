@@ -1,4 +1,5 @@
 ﻿using Einheit13.CounterExample;
+using Einheit13.Shopping.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +19,17 @@ namespace Einheit13
             InitializeComponent();
         }
 
-  
+
 
         private void OnClickBtnStaticExample(object sender, EventArgs e)
         {
             var view = new CounterView();
+            view.Show();
+        }
+
+        private void ClickOnBtnShopping(object sender, EventArgs e)
+        {
+            var view = new Shop();
             view.Show();
         }
     }

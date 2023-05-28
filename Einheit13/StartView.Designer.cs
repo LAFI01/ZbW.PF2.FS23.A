@@ -28,32 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnStaticExample = new Button();
+            BtnStaticExample=new Button();
+            BtnShopping=new Button();
             SuspendLayout();
             // 
             // BtnStaticExample
             // 
-            BtnStaticExample.Location = new Point(37, 34);
-            BtnStaticExample.Name = "BtnStaticExample";
-            BtnStaticExample.Size = new Size(172, 48);
-            BtnStaticExample.TabIndex = 0;
-            BtnStaticExample.Text = "Static Example";
-            BtnStaticExample.UseVisualStyleBackColor = true;
-            BtnStaticExample.Click += OnClickBtnStaticExample;
+            BtnStaticExample.Location=new Point(37, 34);
+            BtnStaticExample.Name="BtnStaticExample";
+            BtnStaticExample.Size=new Size(169, 49);
+            BtnStaticExample.TabIndex=0;
+            BtnStaticExample.Text="Static Example";
+            BtnStaticExample.UseVisualStyleBackColor=true;
+            BtnStaticExample.Click+=OnClickBtnStaticExample;
+            // 
+            // BtnShopping
+            // 
+            BtnShopping.Location=new Point(37, 102);
+            BtnShopping.Name="BtnShopping";
+            BtnShopping.Size=new Size(169, 50);
+            BtnShopping.TabIndex=1;
+            BtnShopping.Text="Shopping";
+            BtnShopping.UseVisualStyleBackColor=true;
+            BtnShopping.Click+=ClickOnBtnShopping;
             // 
             // StartView
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(247, 262);
+            AutoScaleDimensions=new SizeF(10F, 25F);
+            AutoScaleMode=AutoScaleMode.Font;
+            ClientSize=new Size(247, 262);
+            Controls.Add(BtnShopping);
             Controls.Add(BtnStaticExample);
-            Name = "StartView";
-            Text = "StartView";
+            Name="StartView";
+            Text="StartView";
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button BtnStaticExample;
+        private Button BtnShopping;
     }
 }
