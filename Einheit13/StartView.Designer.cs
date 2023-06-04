@@ -30,6 +30,7 @@
         {
             BtnStaticExample=new Button();
             BtnShopping=new Button();
+            BtnInheritance=new Button();
             SuspendLayout();
             // 
             // BtnStaticExample
@@ -52,11 +53,22 @@
             BtnShopping.UseVisualStyleBackColor=true;
             BtnShopping.Click+=ClickOnBtnShopping;
             // 
+            // BtnInheritance
+            // 
+            BtnInheritance.Location=new Point(37, 172);
+            BtnInheritance.Name="BtnInheritance";
+            BtnInheritance.Size=new Size(169, 50);
+            BtnInheritance.TabIndex=2;
+            BtnInheritance.Text="Inheritance";
+            BtnInheritance.UseVisualStyleBackColor=true;
+            BtnInheritance.Click+=ClickOnBtnInheritance;
+            // 
             // StartView
             // 
             AutoScaleDimensions=new SizeF(10F, 25F);
             AutoScaleMode=AutoScaleMode.Font;
             ClientSize=new Size(247, 262);
+            Controls.Add(BtnInheritance);
             Controls.Add(BtnShopping);
             Controls.Add(BtnStaticExample);
             Name="StartView";
@@ -68,5 +80,6 @@
 
         private Button BtnStaticExample;
         private Button BtnShopping;
+        private Button BtnInheritance;
     }
 }

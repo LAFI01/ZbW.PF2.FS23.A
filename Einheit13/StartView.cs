@@ -1,4 +1,5 @@
 ﻿using Einheit13.CounterExample;
+using Einheit13.InheritanceExample;
 using Einheit13.Shopping.View;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,12 @@ namespace Einheit13
         private void ClickOnBtnShopping(object sender, EventArgs e)
         {
             var view = new Shop();
+            view.Show();
+        }
+
+        private void ClickOnBtnInheritance(object sender, EventArgs e)
+        {
+            var view = new DbView();
             view.Show();
         }
     }
