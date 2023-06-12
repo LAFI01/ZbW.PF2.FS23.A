@@ -11,11 +11,19 @@ namespace Einheit13.InheritanceExample
         {
             medien = new Medium[100];
             medienCounter = 0;
+
         }
 
+        public void Print()
+        {
+            //test, um Methodenaufruf innerhalb der Vererbung zu zeigen
+            var cd = new Ucd("cd");
+            cd.Print();
+        }
 
         public bool Add(Medium medium)
         {
+            
             if (medienCounter < medien.Length)
             {
                 medien[medienCounter++] = medium;

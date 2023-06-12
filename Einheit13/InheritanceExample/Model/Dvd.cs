@@ -9,6 +9,11 @@ namespace Einheit13.InheritanceExample.Model
 {
     public class Dvd : Medium
     {
+        public Dvd(string n) : base(n)
+        {
+
+        }
+
         public string Actor { get; set; } 
     }
 }

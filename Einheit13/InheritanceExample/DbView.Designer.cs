@@ -38,6 +38,7 @@
             label2=new Label();
             label3=new Label();
             CmdShowMedium=new Button();
+            button1=new Button();
             SuspendLayout();
             // 
             // CmdCreateCd
@@ -127,11 +128,22 @@
             CmdShowMedium.UseVisualStyleBackColor=true;
             CmdShowMedium.Click+=CmdShowMedium_Click;
             // 
+            // button1
+            // 
+            button1.Location=new Point(225, 386);
+            button1.Name="button1";
+            button1.Size=new Size(112, 34);
+            button1.TabIndex=10;
+            button1.Text="Print";
+            button1.UseVisualStyleBackColor=true;
+            button1.Click+=button1_Click;
+            // 
             // DbView
             // 
             AutoScaleDimensions=new SizeF(10F, 25F);
             AutoScaleMode=AutoScaleMode.Font;
             ClientSize=new Size(748, 450);
+            Controls.Add(button1);
             Controls.Add(CmdShowMedium);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -160,5 +172,6 @@
         private Label label2;
         private Label label3;
         private Button CmdShowMedium;
+        private Button button1;
     }
 }

@@ -22,7 +22,7 @@ namespace Einheit13.InheritanceExample
 
         private void ClickOnCmdCreateCd(object sender, EventArgs e)
         {
-            var cd = new Cd();
+            var cd = new Cd("name");
             cd.Name = TxtName.Text;
             cd.Interpreter = TxtInterpreter.Text;
             controller.Add(cd);
@@ -30,7 +30,7 @@ namespace Einheit13.InheritanceExample
 
         private void ClickOnCmdCreateDvd(object sender, EventArgs e)
         {
-            var dvd = new Dvd();
+            var dvd = new Dvd("name");
             dvd.Name = TxtName.Text;
             dvd.Actor = TxtActor.Text;
             controller.Add(dvd);
@@ -49,6 +49,11 @@ namespace Einheit13.InheritanceExample
             {
                 LbShowAllMediums.Items.Add($"Name: {c.Name} Interpreter: {c.Interpreter}");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            controller.Print();
         }
     }
 }
